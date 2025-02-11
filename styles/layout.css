@@ -1,0 +1,38 @@
+#app {
+  display: grid;
+  grid-template-columns: 30% 69%;
+  gap: 1.25rem;
+  height: 100vh;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+main {
+  overflow: auto;
+  padding: 5rem;
+  background-color: var(--shape-body);
+  border-radius: 12px;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  background: url("/assets/Background.png") center/cover no-repeat;
+  border-radius: 12px;
+
+  & .aside-text h1 {
+    font: var(--text-2xl);
+    color: var(--accent-colors-pink);
+  }
+
+  & .aside-text p {
+    font-weight: 300;
+  }
+
+  & img {
+    height: 48px;
+    width: 45px;
+  }
+}

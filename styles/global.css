@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --font-family: "Open Sans", sans-serif;
   --font-heading: "Baloo 2", sans-serif;
@@ -39,4 +45,11 @@
   --accent-colors-green: #59ff91;
   --accent-colors-cyan: #59fff9;
   --accent-colors-navy: #6a59ff;
+}
+
+body {
+  background-color: var(--shape-background);
+  overflow: hidden;
+  font: var(--text-base);
+  color: var(--text-heading);
 }
