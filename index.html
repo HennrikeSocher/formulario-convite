@@ -27,133 +27,439 @@
       <main>
         <div class="main-container">
           <h1>Crie seu convite</h1>
-          <fieldset>
-            <section id="about">
-              <i data-lucide="calendar"></i><span>Sobre o evento</span>
-
-              <div class="input-group">
-                <div class="input-wrapper">
-                  <label for="title"><span>Titulo</span></label>
-                  <input type="text" id="title" placeholder="Nome do evento" />
-                </div>
-                <div class="row-inputs">
+          <form action="">
+            <fieldset>
+              <section id="about">
+                <legend>
+                  <i data-lucide="calendar"></i><span>Sobre o evento</span>
+                </legend>
+                <div class="input-group">
                   <div class="input-wrapper">
-                    <label for="start-event">Inicio</label>
-                    <input type="date" id="start-event" lang="pt-BR" />
-                  </div>
-
-                  <div class="input-wrapper">
-                    <label for="end-event">Fim</label>
-                    <input type="date" id="end-event" lang="pt-BR" />
-                  </div>
-                </div>
-                <div class="row-inputs">
-                  <div class="segmented-control">
-                    <span class="label">Tipo</span>
-                    <div class="control-container">
-                      <input type="radio" id="presencial" name="mode" checked />
-                      <label for="presencial" class="option">Presencial</label>
-
-                      <input type="radio" id="online" name="mode" />
-                      <label for="online" class="option">Online</label>
-
-                      <div class="marker"></div>
-                    </div>
-                  </div>
-                  <div class="input-wrapper">
-                    <label for="locale">Local</label>
+                    <label for="title"><span>Titulo</span></label>
                     <input
                       type="text"
-                      id="locale"
-                      placeholder="Link ou endereço"
+                      id="title"
+                      placeholder="Nome do evento"
                     />
                   </div>
+                  <div class="row-inputs">
+                    <div class="input-wrapper">
+                      <label for="start-event">Inicio</label>
+                      <input type="date" id="start-event" lang="pt-BR" />
+                    </div>
 
-                  <div class="textarea-wrapper">
-                    <label for="event-description">Descrições</label>
-                    <textarea
-                      name="event-description"
-                      id="event-description"
-                      placeholder="Escreva detalhes sobre o evento"
-                    ></textarea>
+                    <div class="input-wrapper">
+                      <label for="end-event">Fim</label>
+                      <input type="date" id="end-event" lang="pt-BR" />
+                    </div>
+                  </div>
+                  <div class="row-inputs">
+                    <div class="segmented-control">
+                      <span class="label">Tipo</span>
+                      <div class="control-container">
+                        <input
+                          type="radio"
+                          id="presencial"
+                          name="mode"
+                          checked
+                        />
+                        <label for="presencial" class="option"
+                          >Presencial</label
+                        >
+
+                        <input type="radio" id="online" name="mode" />
+                        <label for="online" class="option">Online</label>
+
+                        <div class="marker"></div>
+                      </div>
+                    </div>
+                    <div class="input-wrapper">
+                      <label for="locale">Local</label>
+                      <input
+                        type="text"
+                        id="locale"
+                        placeholder="Link ou endereço"
+                      />
+                    </div>
+
+                    <div class="textarea-wrapper">
+                      <label for="event-description">Descrições</label>
+                      <textarea
+                        name="event-description"
+                        id="event-description"
+                        placeholder="Escreva detalhes sobre o evento"
+                      ></textarea>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </section>
-            <section id="personalization">
-              <i data-lucide="paintbrush-vertical"></i>
-              <span>Personalização</span>
-
-              <div class="color-picker">
-                <span class="label">Cor principal</span>
-                <div class="color-container">
-                  <div class="color-selection">
-                    <div
-                      class="circle"
-                      style="background: var(--brand-mid)"
-                    ></div>
-                  </div>
-                  <div class="color-selection">
-                    <div
-                      class="circle"
-                      style="background: var(--accent-colors-navy)"
-                    ></div>
-                  </div>
-                  <div class="color-selection">
-                    <div
-                      class="circle"
-                      style="background: var(--accent-colors-purple)"
-                    ></div>
-                  </div>
-                  <div class="color-selection">
-                    <div
-                      class="circle"
-                      style="background: var(--accent-colors-fuschia)"
-                    ></div>
-                  </div>
-                  <div class="color-selection selected">
-                    <div
-                      class="circle"
-                      style="background: var(--accent-colors-pink)"
-                    ></div>
-                  </div>
-                  <div class="color-selection">
-                    <div class="circle" style="background: #ff5959"></div>
-                  </div>
-                  <div class="color-selection">
-                    <div
-                      class="circle"
-                      style="background: var(--accent-colors-orange)"
-                    ></div>
-                  </div>
-                  <div class="color-selection">
-                    <div
-                      class="circle"
-                      style="background: var(--accent-colors-yellow)"
-                    ></div>
-                  </div>
-                  <div class="color-selection">
-                    <div
-                      class="circle"
-                      style="background: var(--accent-colors-lime)"
-                    ></div>
-                  </div>
-                  <div class="color-selection">
-                    <div
-                      class="circle"
-                      style="background: var(--accent-colors-green)"
-                    ></div>
-                  </div>
-                  <div class="color-selection">
-                    <div
-                      class="circle"
-                      style="background: var(--accent-colors-cyan)"
-                    ></div>
+              </section>
+            </fieldset>
+            <fieldset>
+              <section id="personalization">
+                <legend>
+                  <i data-lucide="paintbrush-vertical"></i>
+                  <h2>Personalização</h2>
+                </legend>
+                <div class="color-picker">
+                  <h3 class="label">Cor principal</h3>
+                  <div class="color-container">
+                    <div class="color-selection">
+                      <div
+                        class="circle"
+                        style="background: var(--brand-mid)"
+                      ></div>
+                    </div>
+                    <div class="color-selection">
+                      <div
+                        class="circle"
+                        style="background: var(--accent-colors-navy)"
+                      ></div>
+                    </div>
+                    <div class="color-selection">
+                      <div
+                        class="circle"
+                        style="background: var(--accent-colors-purple)"
+                      ></div>
+                    </div>
+                    <div class="color-selection">
+                      <div
+                        class="circle"
+                        style="background: var(--accent-colors-fuschia)"
+                      ></div>
+                    </div>
+                    <div class="color-selection selected">
+                      <div
+                        class="circle"
+                        style="background: var(--accent-colors-pink)"
+                      ></div>
+                    </div>
+                    <div class="color-selection">
+                      <div class="circle" style="background: #ff5959"></div>
+                    </div>
+                    <div class="color-selection">
+                      <div
+                        class="circle"
+                        style="background: var(--accent-colors-orange)"
+                      ></div>
+                    </div>
+                    <div class="color-selection">
+                      <div
+                        class="circle"
+                        style="background: var(--accent-colors-yellow)"
+                      ></div>
+                    </div>
+                    <div class="color-selection">
+                      <div
+                        class="circle"
+                        style="background: var(--accent-colors-lime)"
+                      ></div>
+                    </div>
+                    <div class="color-selection">
+                      <div
+                        class="circle"
+                        style="background: var(--accent-colors-green)"
+                      ></div>
+                    </div>
+                    <div class="color-selection">
+                      <div
+                        class="circle"
+                        style="background: var(--accent-colors-cyan)"
+                      ></div>
+                    </div>
                   </div>
                 </div>
+                <div class="event-theme">
+                  <h3>Tema do evento</h3>
+                  <div class="theme-container">
+                    <label class="theme-card">
+                      <input
+                        type="radio"
+                        name="theme"
+                        value="aniversario"
+                        class="theme-radio"
+                      />
+                      <div class="theme-image">
+                        <img
+                          src="assets/cards/Image.png"
+                          alt="Aniversary theme"
+                        />
+                      </div>
+                      <div class="theme-description">
+                        <span>Aniversário</span>
+                      </div>
+                    </label>
+                    <label class="theme-card">
+                      <input
+                        type="radio"
+                        name="theme"
+                        value="infaltil"
+                        class="theme-radio"
+                      />
+                      <div class="theme-image">
+                        <img
+                          src="assets/cards/Image-1.png"
+                          alt="Infantil theme"
+                        />
+                      </div>
+                      <div class="theme-description">
+                        <span>Infantil</span>
+                      </div>
+                    </label>
+                    <label class="theme-card">
+                      <input
+                        type="radio"
+                        name="theme"
+                        value="formatura"
+                        class="theme-radio"
+                      />
+                      <div class="theme-image">
+                        <img
+                          src="assets/cards/Image-2.png"
+                          alt="Aniversary theme"
+                        />
+                      </div>
+                      <div class="theme-description">
+                        <span>Formatura</span>
+                      </div>
+                    </label>
+                    <label class="theme-card">
+                      <input
+                        type="radio"
+                        name="theme"
+                        value="casamento"
+                        class="theme-radio"
+                      />
+                      <div class="theme-image">
+                        <img
+                          src="assets/cards/Image-3.png"
+                          alt="Aniversary theme"
+                        />
+                      </div>
+                      <div class="theme-description">
+                        <span>Casamento</span>
+                      </div>
+                    </label>
+                    <label class="theme-card">
+                      <input
+                        type="radio"
+                        name="theme"
+                        value="cha-bebe"
+                        class="theme-radio"
+                      />
+                      <div class="theme-image">
+                        <img
+                          src="assets/cards/Image-4.png"
+                          alt="Aniversary theme"
+                        />
+                      </div>
+                      <div class="theme-description">
+                        <span>Chá de bebê</span>
+                      </div>
+                    </label>
+                    <label class="theme-card">
+                      <input
+                        type="radio"
+                        name="theme"
+                        value="cha-panela"
+                        class="theme-radio"
+                      />
+                      <div class="theme-image">
+                        <img
+                          src="assets/cards/Image-5.png"
+                          alt="Aniversary theme"
+                        />
+                      </div>
+                      <div class="theme-description">
+                        <span>Chá de panela</span>
+                      </div>
+                    </label>
+                    <label class="theme-card">
+                      <input
+                        type="radio"
+                        name="theme"
+                        value="carnaval"
+                        class="theme-radio"
+                      />
+                      <div class="theme-image">
+                        <img
+                          src="assets/cards/Image-6.png"
+                          alt="Aniversary theme"
+                        />
+                      </div>
+                      <div class="theme-description">
+                        <span>Carnaval</span>
+                      </div>
+                    </label>
+                    <label class="theme-card">
+                      <input
+                        type="radio"
+                        name="theme"
+                        value="pascoa"
+                        class="theme-radio"
+                      />
+                      <div class="theme-image">
+                        <img
+                          src="assets/cards/Image-7.png"
+                          alt="Aniversary theme"
+                        />
+                      </div>
+                      <div class="theme-description">
+                        <span>Páscoa</span>
+                      </div>
+                    </label>
+                    <label class="theme-card">
+                      <input
+                        type="radio"
+                        name="theme"
+                        value="sao-joao"
+                        class="theme-radio"
+                      />
+                      <div class="theme-image">
+                        <img
+                          src="assets/cards/Image-8.png"
+                          alt="Aniversary theme"
+                        />
+                      </div>
+                      <div class="theme-description">
+                        <span>São João</span>
+                      </div>
+                    </label>
+                    <label class="theme-card">
+                      <input
+                        type="radio"
+                        name="theme"
+                        value="haloween"
+                        class="theme-radio"
+                      />
+                      <div class="theme-image">
+                        <img
+                          src="assets/cards/Image-9.png"
+                          alt="Halloween theme"
+                        />
+                      </div>
+                      <div class="theme-description">
+                        <span>Halloween</span>
+                      </div>
+                    </label>
+                    <label class="theme-card">
+                      <input
+                        type="radio"
+                        name="theme"
+                        value="natal"
+                        class="theme-radio"
+                      />
+                      <div class="theme-image">
+                        <img
+                          src="assets/cards/Image-10.png"
+                          alt="Aniversary theme"
+                        />
+                      </div>
+                      <div class="theme-description">
+                        <span>Natal</span>
+                      </div>
+                    </label>
+                    <label class="theme-card">
+                      <input
+                        type="radio"
+                        name="theme"
+                        value="outro"
+                        class="theme-radio"
+                      />
+                      <div class="theme-image">
+                        <img
+                          src="assets/cards/Image-11.png"
+                          alt="Aniversary theme"
+                        />
+                      </div>
+                      <div class="theme-description">
+                        <span>Outro</span>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                <div class="row-inputs">
+                  <div class="style-toggle">
+                    <span>Estilo</span>
+                    <label class="toggle-switch">
+                      <input type="checkbox" class="toggle-input" />
+                      <span class="toggle-slider"></span>
+                    </label>
+                    <span>Escuro</span>
+                  </div>
+                  <div class="cover-photo">
+                    <span>Foto de capa</span>
+                    <label class="file-upload">
+                      <input type="file" />
+                      <span class="upload-btn">
+                        <i class="lucide lucide-upload"></i> Selecionar
+                      </span>
+                    </label>
+                    <span class="file-name">Nenhum arquivo selecionado</span>
+                  </div>
+                </div>
+              </section>
+            </fieldset>
+            <fieldset>
+              <legend><i data-lucide="contact"></i>Dados para contato</legend>
+              <div class="input-wrapper">
+                <label for="contact-name">Nome</label>
+                <input
+                  type="text"
+                  name="contact-name"
+                  id="contact-name"
+                  placeholder="Nome completo"
+                />
               </div>
-            </section>
-          </fieldset>
+              <div class="row-inputs">
+                <div class="input-wrapper">
+                  <label for="contact-email">Email</label>
+                  <input
+                    type="email"
+                    name="contact-email"
+                    id="contact-email"
+                    placeholder="seuemail@email.com"
+                  />
+                </div>
+                <div class="input-wrapper">
+                  <label for="contact-phone">Telefone</label>
+                  <input
+                    type="number"
+                    name="contact-phone"
+                    id="contact-phone"
+                    placeholder="(xx) xxxxx-xxxx"
+                  />
+                </div>
+              </div>
+            </fieldset>
+            <footer>
+              <div class="footer-buttons">
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" id="terms" />
+                  <label for="terms"
+                    >Li e concordo com os <a href="#">Termos e Condições</a> e
+                    com a <a href="#"> Política de Privacidade</a></label
+                  >
+                </div>
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" id="promo-mail" />
+                  <label for="promo-mail"
+                    >Aceito receber atualizações e promoções por e-mail</label
+                  >
+                </div>
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" id="promo-sms" />
+                  <label for="promo-sms">
+                    Aceito receber atualizações e promoções por SMS
+                  </label>
+                </div>
+              </div>
+              <div class="submit-button">
+                <button type="submit">
+                  <i data-lucide="ticket"></i>Gerar convite
+                </button>
+              </div>
+            </footer>
+          </form>
         </div>
       </main>
     </div>
