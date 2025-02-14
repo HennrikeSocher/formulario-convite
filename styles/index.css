@@ -1,2 +1,7 @@
 @import url(global.css);
 @import url(layout.css);
+@import url(form.css);
+@import url(section-about.css);
+@import url(section-personalization.css);
+@import url(section-contact.css);
+@import url(footer.css);

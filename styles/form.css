@@ -1,0 +1,39 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+  margin-inline: auto;
+  max-width: 35rem;
+
+  & h1 {
+    margin-right: auto;
+    font: var(--text-xl);
+  }
+}
+
+#invite-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 35rem;
+}
+
+& fieldset {
+  border: none;
+
+  & legend {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font: var(--text-lg);
+    color: var(--text-body);
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+
+    & i {
+      width: 24px;
+      height: 24px;
+      stroke: var(--input-placeholder);
+    }
+  }
+}
