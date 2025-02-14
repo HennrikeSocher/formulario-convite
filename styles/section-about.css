@@ -31,7 +31,7 @@
     border: solid 1px var(--brand-light);
   }
 
-  & input {
+  & input[type="text"] {
     padding: 1rem;
     background-color: var(--input-base);
     border: solid 1px var(--input-stroke);
